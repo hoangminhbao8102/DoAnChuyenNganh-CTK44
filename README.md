@@ -1,4 +1,4 @@
-Môn học "Đồ án chuyên ngành"
+<strong>Môn học "Đồ án chuyên ngành"</strong>
 
 Chuyên ngành: Kỹ thuật phần mềm
 
