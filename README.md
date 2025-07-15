@@ -1,6 +1,6 @@
 # DoAnChuyenNganh-CTK44
 
-<strong>Môn học "Đồ án chuyên ngành"</strong>
+<strong>Môn học "Đồ án chuyên ngành"</strong><br>
 Chuyên ngành: Kỹ thuật phần mềm<br>
 Lớp: CTK44<br>
 Trường: Đại học Đà Lạt<br>
