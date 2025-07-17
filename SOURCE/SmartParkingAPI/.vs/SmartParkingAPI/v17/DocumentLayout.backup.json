@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "Data\\Seeders\\DataSeeder.cs",
               "ToolTip": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Data\\Seeders\\DataSeeder.cs",
               "RelativeToolTip": "Data\\Seeders\\DataSeeder.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCEAAAB0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-16T08:12:28.938Z",
               "EditorCaption": ""
@@ -67,8 +67,7 @@
               "RelativeToolTip": "Controllers\\AdminController.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAAmwHUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T07:58:37.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T07:58:37.434Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "Controllers\\ParkingController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T07:43:18.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T07:43:18.144Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "Controllers\\ReservationsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T04:13:25.609Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T04:13:25.609Z"
             },
             {
               "$type": "Document",
@@ -118,8 +115,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAiwB8AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T03:57:12.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T03:57:12.77Z"
             }
           ]
         }
