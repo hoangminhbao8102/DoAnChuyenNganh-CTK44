@@ -12,4 +12,4 @@ Hoc kì II - Năm 3 (2022 - 2023)<br>
 <strong>Giáo viên hướng dẫn làm đồ án:</strong> Cô TS. Nguyễn Thị Lương<br>
 <br>
 Link Github: <a href="https://github.com/hoangminhbao8102/DoAnChuyenNganh-CTK44">hoangminhbao8102/DoAnChuyenNganh-CTK44</a><br>
-<h1 style="color:red;">SẮP HOÀN THÀNH</h1>
+<h1 style="color:red;">ĐÃ HOÀN THÀNH</h1>
