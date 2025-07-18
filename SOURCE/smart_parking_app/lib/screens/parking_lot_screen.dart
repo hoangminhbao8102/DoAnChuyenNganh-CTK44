@@ -3,7 +3,9 @@ import '../services/api_service.dart';
 import '../models/parking_lot.dart';
 
 class ParkingLotScreen extends StatefulWidget {
-  const ParkingLotScreen({Key? key, required ApiService apiService})
+  final ApiService apiService;
+
+  const ParkingLotScreen({Key? key, required this.apiService})
       : super(key: key);
 
   @override
@@ -11,24 +13,23 @@ class ParkingLotScreen extends StatefulWidget {
 }
 
 class _ParkingLotScreenState extends State<ParkingLotScreen> {
-  final ApiService _apiService = ApiService();
   late Future<List<ParkingLot>> _lotsFuture;
 
   @override
   void initState() {
     super.initState();
-    _lotsFuture = _apiService.getParkingLots();
+    _lotsFuture = widget.apiService.getParkingLots();
   }
 
   void _reserveSlot(int slotId) async {
-    final success = await _apiService.reserveSlot(slotId);
+    final success = await widget.apiService.reserveSlot(slotId);
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(success ? "Đặt chỗ thành công" : "Thất bại"),
       ),
     );
     setState(() {
-      _lotsFuture = _apiService.getParkingLots();
+      _lotsFuture = widget.apiService.getParkingLots();
     });
   }
 
@@ -49,7 +50,7 @@ class _ParkingLotScreenState extends State<ParkingLotScreen> {
                   title: Text(
                       "${lot.name} (${lot.availableSlots}/${lot.totalSlots})"),
                   subtitle: Text(lot.address),
-                  children: lot.parkingSlots.map((slot) {
+                  children: (lot.parkingSlots).map((slot) {
                     return ListTile(
                       title: Text("Slot: ${slot.slotCode}"),
                       trailing: slot.isOccupied

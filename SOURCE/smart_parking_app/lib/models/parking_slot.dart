@@ -15,7 +15,7 @@ class ParkingSlot {
     return ParkingSlot(
       id: json['id'],
       slotCode: json['slotCode'],
-      isOccupied: json['isOccupied'],
+      isOccupied: json['isOccupied'] == true || json['isOccupied'] == 1,
       parkingLotId: json['parkingLotId'],
     );
   }

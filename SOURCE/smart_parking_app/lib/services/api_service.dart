@@ -6,14 +6,18 @@ import '../models/parking_lot.dart';
 import '../models/reservation.dart';
 
 class ApiService {
-  static const String baseUrl = "https://localhost:7082/api";
+  // ✅ Dùng IP thật + HTTP để thiết bị thật hoặc emulator truy cập được
+  static const String baseUrl =
+      "http://192.168.100.6:5041/api"; // <--- THAY IP nếu cần
 
   User? currentUser;
 
   Future<User?> login(String username, String password) async {
-    final res = await http.post(Uri.parse('$baseUrl/Auth/login'),
-        headers: {'Content-Type': 'application/json'},
-        body: jsonEncode({'username': username, 'password': password}));
+    final res = await http.post(
+      Uri.parse('$baseUrl/Auth/login'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({'username': username, 'password': password}),
+    );
 
     if (res.statusCode == 200) {
       currentUser = User.fromJson(jsonDecode(res.body));
@@ -25,14 +29,16 @@ class ApiService {
 
   Future<bool> register(
       String username, String password, String fullName) async {
-    final res = await http.post(Uri.parse('$baseUrl/Auth/register'),
-        headers: {'Content-Type': 'application/json'},
-        body: jsonEncode({
-          'username': username,
-          'password': password,
-          'fullName': fullName,
-          'role': 'Customer'
-        }));
+    final res = await http.post(
+      Uri.parse('$baseUrl/Auth/register'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({
+        'username': username,
+        'password': password,
+        'fullName': fullName,
+        'role': 'Customer'
+      }),
+    );
 
     return res.statusCode == 200;
   }
@@ -43,23 +49,28 @@ class ApiService {
       final list = jsonDecode(res.body) as List;
       return list.map((e) => ParkingLot.fromJson(e)).toList();
     } else {
-      throw Exception("Failed to fetch lots");
+      throw Exception("Failed to fetch parking lots");
     }
   }
 
   Future<bool> reserveSlot(int slotId) async {
     if (currentUser == null) return false;
-    final res = await http.post(Uri.parse('$baseUrl/Parking/reserve'),
-        headers: {'Content-Type': 'application/json'},
-        body: jsonEncode({'userId': currentUser!.id, 'slotId': slotId}));
+
+    final res = await http.post(
+      Uri.parse('$baseUrl/Parking/reserve'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({'userId': currentUser!.id, 'slotId': slotId}),
+    );
 
     return res.statusCode == 200;
   }
 
   Future<List<Reservation>> getMyReservations() async {
     if (currentUser == null) return [];
-    final res = await http
-        .get(Uri.parse('$baseUrl/Reservations/user/${currentUser!.id}'));
+
+    final res = await http.get(
+      Uri.parse('$baseUrl/Reservations/user/${currentUser!.id}'),
+    );
 
     if (res.statusCode == 200) {
       final list = jsonDecode(res.body) as List;
@@ -70,8 +81,10 @@ class ApiService {
   }
 
   Future<bool> cancelReservation(int reservationId) async {
-    final res =
-        await http.delete(Uri.parse('$baseUrl/Reservations/$reservationId'));
+    final res = await http.delete(
+      Uri.parse('$baseUrl/Reservations/$reservationId'),
+    );
+
     return res.statusCode == 200;
   }
 
@@ -101,44 +114,52 @@ class ApiService {
   }
 
   Future<void> createLot(ParkingLot lot) async {
-    await http.post(Uri.parse('$baseUrl/Admin/lots'),
-        headers: {'Content-Type': 'application/json'},
-        body: jsonEncode({
-          'name': lot.name,
-          'address': lot.address,
-          'totalSlots': lot.totalSlots,
-          'availableSlots': lot.availableSlots
-        }));
+    await http.post(
+      Uri.parse('$baseUrl/Admin/lots'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({
+        'name': lot.name,
+        'address': lot.address,
+        'totalSlots': lot.totalSlots,
+        'availableSlots': lot.availableSlots
+      }),
+    );
   }
 
   Future<void> updateLot(ParkingLot lot) async {
-    await http.put(Uri.parse('$baseUrl/Admin/lots/${lot.id}'),
-        headers: {'Content-Type': 'application/json'},
-        body: jsonEncode({
-          'name': lot.name,
-          'address': lot.address,
-          'totalSlots': lot.totalSlots,
-          'availableSlots': lot.availableSlots
-        }));
+    await http.put(
+      Uri.parse('$baseUrl/Admin/lots/${lot.id}'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({
+        'name': lot.name,
+        'address': lot.address,
+        'totalSlots': lot.totalSlots,
+        'availableSlots': lot.availableSlots
+      }),
+    );
   }
 
   Future<void> createSlot(ParkingSlot slot) async {
-    await http.post(Uri.parse('$baseUrl/Admin/slots'),
-        headers: {'Content-Type': 'application/json'},
-        body: jsonEncode({
-          'slotCode': slot.slotCode,
-          'parkingLotId': slot.parkingLotId,
-          'isOccupied': slot.isOccupied
-        }));
+    await http.post(
+      Uri.parse('$baseUrl/Admin/slots'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({
+        'slotCode': slot.slotCode,
+        'parkingLotId': slot.parkingLotId,
+        'isOccupied': slot.isOccupied
+      }),
+    );
   }
 
   Future<void> updateSlot(ParkingSlot slot) async {
-    await http.put(Uri.parse('$baseUrl/Admin/slots/${slot.id}'),
-        headers: {'Content-Type': 'application/json'},
-        body: jsonEncode({
-          'slotCode': slot.slotCode,
-          'parkingLotId': slot.parkingLotId,
-          'isOccupied': slot.isOccupied
-        }));
+    await http.put(
+      Uri.parse('$baseUrl/Admin/slots/${slot.id}'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({
+        'slotCode': slot.slotCode,
+        'parkingLotId': slot.parkingLotId,
+        'isOccupied': slot.isOccupied
+      }),
+    );
   }
 }

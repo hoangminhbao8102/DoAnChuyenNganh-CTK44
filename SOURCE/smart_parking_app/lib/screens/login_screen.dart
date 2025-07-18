@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 import '../services/api_service.dart';
 import 'parking_lot_screen.dart';
@@ -29,6 +31,8 @@ class LoginScreen extends StatelessWidget {
             onPressed: () async {
               final user = await apiService.login(
                   userController.text, passController.text);
+              print("User login result: $user"); // Log kết quả
+
               if (user != null) {
                 Navigator.pushReplacement(
                     context,

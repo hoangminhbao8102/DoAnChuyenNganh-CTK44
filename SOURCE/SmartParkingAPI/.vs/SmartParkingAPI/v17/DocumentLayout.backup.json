@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FF221F93-ECA5-42D2-AAF1-00B2C4F431CE}|SmartParkingAPI.csproj|e:\\doanchuyennganh-ctk44\\source\\smartparkingapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FF221F93-ECA5-42D2-AAF1-00B2C4F431CE}|SmartParkingAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF221F93-ECA5-42D2-AAF1-00B2C4F431CE}|SmartParkingAPI.csproj|e:\\doanchuyennganh-ctk44\\source\\smartparkingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF221F93-ECA5-42D2-AAF1-00B2C4F431CE}|SmartParkingAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF221F93-ECA5-42D2-AAF1-00B2C4F431CE}|SmartParkingAPI.csproj|e:\\doanchuyennganh-ctk44\\source\\smartparkingapi\\data\\seeders\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF221F93-ECA5-42D2-AAF1-00B2C4F431CE}|SmartParkingAPI.csproj|solutionrelative:data\\seeders\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FF221F93-ECA5-42D2-AAF1-00B2C4F431CE}|SmartParkingAPI.csproj|e:\\doanchuyennganh-ctk44\\source\\smartparkingapi\\controllers\\parkingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF221F93-ECA5-42D2-AAF1-00B2C4F431CE}|SmartParkingAPI.csproj|solutionrelative:controllers\\parkingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF221F93-ECA5-42D2-AAF1-00B2C4F431CE}|SmartParkingAPI.csproj|e:\\doanchuyennganh-ctk44\\source\\smartparkingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF221F93-ECA5-42D2-AAF1-00B2C4F431CE}|SmartParkingAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF221F93-ECA5-42D2-AAF1-00B2C4F431CE}|SmartParkingAPI.csproj|e:\\doanchuyennganh-ctk44\\source\\smartparkingapi\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,19 +51,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DataSeeder.cs",
-              "DocumentMoniker": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Data\\Seeders\\DataSeeder.cs",
-              "RelativeDocumentMoniker": "Data\\Seeders\\DataSeeder.cs",
-              "ToolTip": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Data\\Seeders\\DataSeeder.cs",
-              "RelativeToolTip": "Data\\Seeders\\DataSeeder.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCEAAAB0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T08:12:28.938Z",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-18T07:53:56.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AdminController.cs",
               "DocumentMoniker": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -71,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ParkingController.cs",
               "DocumentMoniker": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Controllers\\ParkingController.cs",
               "RelativeDocumentMoniker": "Controllers\\ParkingController.cs",
@@ -83,7 +87,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAUwDEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T03:57:12.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Data\\Seeders\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "Data\\Seeders\\DataSeeder.cs",
+              "ToolTip": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Data\\Seeders\\DataSeeder.cs",
+              "RelativeToolTip": "Data\\Seeders\\DataSeeder.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCEAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T08:12:28.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ReservationsController.cs",
               "DocumentMoniker": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Controllers\\ReservationsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReservationsController.cs",
@@ -95,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -104,18 +133,6 @@
               "ViewState": "AgIAABMAAAAAAAAAAAAgwD4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-16T04:11:30.191Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\DoAnChuyenNganh-CTK44\\SOURCE\\SmartParkingAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAiwB8AAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T03:57:12.77Z"
             }
           ]
         }

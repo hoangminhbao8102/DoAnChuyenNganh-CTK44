@@ -18,9 +18,10 @@ class ParkingLot {
   });
 
   factory ParkingLot.fromJson(Map<String, dynamic> json) {
-    var slotList = (json['parkingSlots'] as List)
-        .map((e) => ParkingSlot.fromJson(e))
-        .toList();
+    var slotList = (json['parkingSlots'] as List?)
+            ?.map((e) => ParkingSlot.fromJson(e))
+            .toList() ??
+        [];
 
     return ParkingLot(
       id: json['id'],
